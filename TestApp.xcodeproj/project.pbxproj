@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		9B3263D22A66AE4800FE2C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3263D12A66AE4800FE2C1B /* AppDelegate.swift */; };
 		9B3263D42A66AE4800FE2C1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3263D32A66AE4800FE2C1B /* SceneDelegate.swift */; };
-		9B3263D62A66AE4800FE2C1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3263D52A66AE4800FE2C1B /* ViewController.swift */; };
-		9B3263D92A66AE4800FE2C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3263D72A66AE4800FE2C1B /* Main.storyboard */; };
 		9B3263DB2A66AE4A00FE2C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3263DA2A66AE4A00FE2C1B /* Assets.xcassets */; };
 		9B3263DE2A66AE4A00FE2C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3263DC2A66AE4A00FE2C1B /* LaunchScreen.storyboard */; };
+		9B40483C2A6714B400045326 /* FeatureOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 9B40483B2A6714B400045326 /* FeatureOnboarding */; };
+		9B7C74F82A66C8AE00D9FBFE /* TAUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7C74F72A66C8AE00D9FBFE /* TAUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B3263CE2A66AE4800FE2C1B /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3263D12A66AE4800FE2C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B3263D32A66AE4800FE2C1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B3263D52A66AE4800FE2C1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B3263D82A66AE4800FE2C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B3263DA2A66AE4A00FE2C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3263DD2A66AE4A00FE2C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B3263DF2A66AE4A00FE2C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B40483A2A67126200045326 /* FeatureOnboarding */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureOnboarding; sourceTree = "<group>"; };
+		9B760BFB2A66C85B00697661 /* TAUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TAUIKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B40483C2A6714B400045326 /* FeatureOnboarding in Frameworks */,
+				9B7C74F82A66C8AE00D9FBFE /* TAUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +42,10 @@
 		9B3263C52A66AE4800FE2C1B = {
 			isa = PBXGroup;
 			children = (
+				9B3263EA2A66C7C200FE2C1B /* Modules */,
 				9B3263D02A66AE4800FE2C1B /* TestApp */,
 				9B3263CF2A66AE4800FE2C1B /* Products */,
+				9B7C74F62A66C8AE00D9FBFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +62,43 @@
 			children = (
 				9B3263D12A66AE4800FE2C1B /* AppDelegate.swift */,
 				9B3263D32A66AE4800FE2C1B /* SceneDelegate.swift */,
-				9B3263D52A66AE4800FE2C1B /* ViewController.swift */,
-				9B3263D72A66AE4800FE2C1B /* Main.storyboard */,
 				9B3263DA2A66AE4A00FE2C1B /* Assets.xcassets */,
 				9B3263DC2A66AE4A00FE2C1B /* LaunchScreen.storyboard */,
 				9B3263DF2A66AE4A00FE2C1B /* Info.plist */,
 			);
 			path = TestApp;
+			sourceTree = "<group>";
+		};
+		9B3263EA2A66C7C200FE2C1B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9B7C74F92A67120600D9FBFE /* Features */,
+				9B3263EB2A66C7C200FE2C1B /* Core */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9B3263EB2A66C7C200FE2C1B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9B760BFB2A66C85B00697661 /* TAUIKit */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9B7C74F62A66C8AE00D9FBFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B7C74F92A67120600D9FBFE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9B40483A2A67126200045326 /* FeatureOnboarding */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +117,10 @@
 			dependencies = (
 			);
 			name = TestApp;
+			packageProductDependencies = (
+				9B7C74F72A66C8AE00D9FBFE /* TAUIKit */,
+				9B40483B2A6714B400045326 /* FeatureOnboarding */,
+			);
 			productName = TestApp;
 			productReference = 9B3263CE2A66AE4800FE2C1B /* TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,8 @@
 				Base,
 			);
 			mainGroup = 9B3263C52A66AE4800FE2C1B;
+			packageReferences = (
+			);
 			productRefGroup = 9B3263CF2A66AE4800FE2C1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +167,6 @@
 			files = (
 				9B3263DE2A66AE4A00FE2C1B /* LaunchScreen.storyboard in Resources */,
 				9B3263DB2A66AE4A00FE2C1B /* Assets.xcassets in Resources */,
-				9B3263D92A66AE4800FE2C1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +177,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3263D62A66AE4800FE2C1B /* ViewController.swift in Sources */,
 				9B3263D22A66AE4800FE2C1B /* AppDelegate.swift in Sources */,
 				9B3263D42A66AE4800FE2C1B /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +185,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B3263D72A66AE4800FE2C1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B3263D82A66AE4800FE2C1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9B3263DC2A66AE4A00FE2C1B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +327,6 @@
 				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +354,6 @@
 				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +391,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B40483B2A6714B400045326 /* FeatureOnboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureOnboarding;
+		};
+		9B7C74F72A66C8AE00D9FBFE /* TAUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TAUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B3263C62A66AE4800FE2C1B /* Project object */;
 }
